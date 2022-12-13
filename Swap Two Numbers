@@ -1,0 +1,31 @@
+# Swap Two Numbers
+
+# a = 5
+# b = 10
+
+a = int(input('enter the a number : '))
+
+b = int(input('enter the b number : '))
+
+# method 1
+a,b = b,a
+print(a)
+print(b)
+
+
+# Swap Two Numbers
+
+# method 2
+# a = 5
+# b = 10
+
+a = int(input('enter the a number : '))
+
+b = int(input('enter the b number : '))
+
+a = a+b
+b = a-b
+a = a-b
+
+print(a)
+print(b)
