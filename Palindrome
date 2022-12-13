@@ -1,0 +1,20 @@
+# palindrome with string
+# method 1
+n = input('enter num :' )
+if n == n[::-1]:
+  print('palindrome')
+else:
+  print('not palindrome')
+  
+ # method 2 
+  n1 = input('enter the number : ')
+n2 = ''
+for i in n1:
+  n2 = i+n2
+if n1 == n2:
+  print('palindrome')
+else:
+  print('not palindrome')
+  
+  
+  
