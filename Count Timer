@@ -1,0 +1,8 @@
+import time
+count_time = 10
+for i in reversed(range(count_time+1)):
+  if i>0:
+    print(i,end='>>>>',flush=True)                          #count timer
+    time.sleep(1)
+  else:
+    print('start')
