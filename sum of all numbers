@@ -1,0 +1,24 @@
+sum = 0
+for i in range(1,n+1):
+  sum = sum+i
+
+print(sum)
+
+
+
+# with function
+
+def add(n):                  # o(n) > o(1)  the time complicity is higher so, o(1) takes less time to run 
+  sum = 0                      
+  for i in range(1,n+1):
+    sum = sum + i
+
+print(sum)
+
+add(5)
+
+# another logic with def
+
+def add(n):
+  return n*(n+1)//2   # o(1)  efficent
+add(5)
