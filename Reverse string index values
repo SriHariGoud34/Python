@@ -1,0 +1,5 @@
+n = 'sky is blue'
+s = n.split()
+rev = s[::-1]
+n = ' '.join(rev)
+print(n)
