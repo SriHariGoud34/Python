@@ -1,0 +1,7 @@
+n = 's,r,i,h,a,r,i,i,n,d,i,a'
+separate = n.split(',')
+visited = []
+for i in n:
+  if i not in visited:
+    print(f'{i}:{separate.count(i)}',end = ',')
+    visited.append(i)
