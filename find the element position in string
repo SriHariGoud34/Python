@@ -1,0 +1,12 @@
+# find the element ending position in string
+
+n = 'my name is  hari'
+f = n.find('hari')
+print(f)
+
+# similar method - index
+
+n = 'my name is  hari'
+f = n.index('is')
+print(f)
+
