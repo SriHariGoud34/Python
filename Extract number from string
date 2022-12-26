@@ -1,0 +1,35 @@
+# Extract number from string
+
+n = 'hfndh456nghf23'
+sum = ''
+for i in n:
+  if i.isdigit():
+    sum += i 
+print(sum)
+
+
+
+# separate number and alphabets from string
+
+n = '6554dgdhbegdh334'  
+
+num = alpha = ''
+for i in n:
+  if i.isdigit():
+    num +=i
+  else:
+    if i.isalpha():
+      alpha += i
+print(num)
+print(alpha) 
+
+
+# sum of all numbers in string
+
+n = 'hgb234fjf567bhn9'
+sum = 0
+for i in n:
+  if i.isdigit():
+    sum += int(i)
+    
+print(sum)
