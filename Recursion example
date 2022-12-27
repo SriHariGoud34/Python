@@ -1,0 +1,10 @@
+#recursion 
+def fact(a):
+  if a == 0:
+    return 0
+  else:
+    print(a)
+    fact(a-1)
+fact(3)
+
+A function calling itself called recursion.
