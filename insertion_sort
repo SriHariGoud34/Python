@@ -1,0 +1,14 @@
+# insertion_sort
+def insertion_sort(arr):
+  for i in range(len(arr)):
+    temp = arr[i]
+    pos = i
+
+    while pos > 0 and arr[pos-1] > temp:
+      arr[pos] = arr[pos-1]
+      pos = pos -1
+    arr[pos] = temp 
+  return arr
+
+n = [2,3,6,1,66,5,9]
+insertion_sort(n)
