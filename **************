@@ -1,0 +1,94 @@
+Here are some of the **most frequently asked Python coding questions** in software job interviews, categorized by topic:  
+
+---
+
+### **1. Arrays & Strings**
+✅ **Two Sum** (Find two numbers that add up to a target)  
+✅ **Longest Substring Without Repeating Characters**  
+✅ **Reverse a String**  
+✅ **Find Duplicate in an Array**  
+✅ **Check if Two Strings Are Anagrams**  
+
+---
+
+### **2. Sorting & Searching**
+✅ **Merge Two Sorted Arrays**  
+✅ **Find First and Last Position of an Element in Sorted Array**  
+✅ **Search in a Rotated Sorted Array**  
+✅ **Find Kth Largest Element in an Array**  
+✅ **Binary Search Implementation**  
+
+---
+
+### **3. Linked Lists**
+✅ **Reverse a Linked List**  
+✅ **Detect a Cycle in a Linked List (Floyd’s Cycle Detection Algorithm)**  
+✅ **Merge Two Sorted Linked Lists**  
+✅ **Find the Middle Node of a Linked List**  
+✅ **Remove N-th Node from End of List**  
+
+---
+
+### **4. Stacks & Queues**
+✅ **Valid Parentheses (Check if a string has balanced brackets)**  
+✅ **Implement a Min Stack (Stack that supports constant-time min retrieval)**  
+✅ **LRU (Least Recently Used) Cache Implementation**  
+✅ **Evaluate Reverse Polish Notation**  
+✅ **Implement a Queue using Stacks**  
+
+---
+
+### **5. Recursion & Backtracking**
+✅ **Generate All Subsets (Power Set)**  
+✅ **N-Queens Problem**  
+✅ **Sudoku Solver**  
+✅ **Word Search in a Grid**  
+✅ **Combination Sum Problem**  
+
+---
+
+### **6. Dynamic Programming (DP)**
+✅ **Climbing Stairs (Fibonacci DP)**  
+✅ **Longest Increasing Subsequence**  
+✅ **Knapsack Problem (0/1 Knapsack)**  
+✅ **Coin Change Problem**  
+✅ **Longest Common Subsequence**  
+
+---
+
+### **7. Graphs & Trees**
+✅ **Depth-First Search (DFS) & Breadth-First Search (BFS)**  
+✅ **Find the Lowest Common Ancestor in a BST**  
+✅ **Check if a Binary Tree is Balanced**  
+✅ **Dijkstra’s Algorithm (Shortest Path in Graphs)**  
+✅ **Number of Islands (Graph DFS/BFS)**  
+
+---
+
+### **8. Bit Manipulation**
+✅ **Find the Single Number (XOR Trick)**  
+✅ **Counting Set Bits in a Number**  
+✅ **Power of Two Check**  
+✅ **Reverse Bits**  
+✅ **Find Missing Number in a Sequence**  
+
+---
+
+### **9. Math & Number Theory**
+✅ **Find the GCD of Two Numbers**  
+✅ **Check if a Number is Prime**  
+✅ **Find Factorial of a Number**  
+✅ **Excel Sheet Column Number Conversion**  
+✅ **Count Trailing Zeroes in Factorial**  
+
+---
+
+### **10. System Design & OOP Concepts**
+✅ **Design a Parking Lot System**  
+✅ **Design an LRU Cache**  
+✅ **Implement a Rate Limiter**  
+✅ **Design a URL Shortener**  
+✅ **Design a File Sharing System**  
+
+---
+
