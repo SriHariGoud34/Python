@@ -1,0 +1,200 @@
+Here are all the major **sorting algorithms** implemented in **Python** in a **simple and efficient manner**:
+
+---
+
+## **🔹 1. Bubble Sort (O(n²))**  
+Repeatedly swaps adjacent elements if they are in the wrong order.
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:  # Swap if the element is greater
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+print(bubble_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Small datasets, easy to implement.  
+
+---
+
+## **🔹 2. Selection Sort (O(n²))**  
+Finds the smallest element and places it at the beginning.
+```python
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        min_idx = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_idx]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    return arr
+
+print(selection_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Simple implementation, small datasets.  
+
+---
+
+## **🔹 3. Insertion Sort (O(n²), Best: O(n))**  
+Builds a sorted list one item at a time.
+```python
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+print(insertion_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Nearly sorted arrays (Best case: O(n)).  
+
+---
+
+## **🔹 4. Merge Sort (O(n log n))**  
+Divides the array into halves, sorts, and merges them.
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    return merge(left, right)
+
+def merge(left, right):
+    sorted_arr = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            sorted_arr.append(left[i])
+            i += 1
+        else:
+            sorted_arr.append(right[j])
+            j += 1
+    sorted_arr.extend(left[i:])
+    sorted_arr.extend(right[j:])
+    return sorted_arr
+
+print(merge_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Large datasets, stable sorting.
+
+---
+
+## **🔹 5. Quick Sort (O(n log n), Worst: O(n²))**  
+Selects a pivot, partitions the array, and recursively sorts.
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+
+    return quick_sort(left) + middle + quick_sort(right)
+
+print(quick_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Large datasets, fast average performance.
+
+---
+
+## **🔹 6. Heap Sort (O(n log n))**  
+Uses a binary heap for sorting.
+```python
+import heapq
+
+def heap_sort(arr):
+    heapq.heapify(arr)
+    return [heapq.heappop(arr) for _ in range(len(arr))]
+
+print(heap_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Priority queue operations, efficient sorting.
+
+---
+
+## **🔹 7. Counting Sort (O(n + k))**  
+Used for sorting integers within a fixed range.
+```python
+def counting_sort(arr):
+    if not arr:
+        return []
+
+    max_val = max(arr)
+    count = [0] * (max_val + 1)
+
+    for num in arr:
+        count[num] += 1
+
+    sorted_arr = []
+    for i, freq in enumerate(count):
+        sorted_arr.extend([i] * freq)
+    
+    return sorted_arr
+
+print(counting_sort([5, 3, 8, 1, 2]))  # [1, 2, 3, 5, 8]
+```
+✅ **Best for:** Sorting numbers with a **small range**.
+
+---
+
+## **🔹 8. Radix Sort (O(nk))**  
+Sorts numbers digit by digit.
+```python
+def radix_sort(arr):
+    max_val = max(arr, default=0)
+    exp = 1
+    while max_val // exp > 0:
+        arr = counting_sort_by_digit(arr, exp)
+        exp *= 10
+    return arr
+
+def counting_sort_by_digit(arr, exp):
+    count = [0] * 10
+    output = [0] * len(arr)
+
+    for num in arr:
+        index = (num // exp) % 10
+        count[index] += 1
+
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+
+    for num in reversed(arr):
+        index = (num // exp) % 10
+        output[count[index] - 1] = num
+        count[index] -= 1
+
+    return output
+
+print(radix_sort([170, 45, 75, 90, 802, 24, 2, 66]))  # [2, 24, 45, 66, 75, 90, 170, 802]
+```
+✅ **Best for:** Sorting **large numbers** efficiently.
+
+---
+
+## **🔹 Summary Table**
+| Algorithm | Time Complexity | Best For |
+|-----------|---------------|----------|
+| **Bubble Sort** | O(n²) | Small datasets |
+| **Selection Sort** | O(n²) | Simple implementations |
+| **Insertion Sort** | O(n²) | Nearly sorted data |
+| **Merge Sort** | O(n log n) | Large datasets, stable sorting |
+| **Quick Sort** | O(n log n) | Fast sorting, general-purpose |
+| **Heap Sort** | O(n log n) | Efficient sorting using heaps |
+| **Counting Sort** | O(n + k) | Sorting numbers in a small range |
+| **Radix Sort** | O(nk) | Sorting large numbers |
+
+---
