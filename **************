@@ -92,3 +92,144 @@ Here are some of the **most frequently asked Python coding questions** in softwa
 
 ---
 
+Here's a list of **100 most commonly asked coding interview questions** for software engineering jobs, categorized by topic:
+
+---
+
+## **Array & String Questions**
+1. Two Sum  
+2. Merge Two Sorted Arrays  
+3. Find First and Last Position of an Element in Sorted Array  
+4. Search in a Rotated Sorted Array  
+5. Find Kth Largest Element in an Array  
+6. Longest Substring Without Repeating Characters  
+7. Reverse a String  
+8. Check if Two Strings Are Anagrams  
+9. Find Duplicate in an Array  
+10. Maximum Subarray (Kadane’s Algorithm)  
+11. Best Time to Buy and Sell Stock  
+12. Rotate Array  
+13. Product of Array Except Self  
+14. Spiral Matrix  
+15. Word Search  
+16. Longest Common Prefix  
+17. Valid Palindrome  
+18. Group Anagrams  
+19. Remove Duplicates from Sorted Array  
+20. Find the Missing Number  
+
+---
+
+## **Sorting & Searching**
+21. Binary Search  
+22. Merge Sort  
+23. Quick Sort  
+24. Find Peak Element  
+25. Search a 2D Matrix  
+26. Top K Frequent Elements  
+27. Median of Two Sorted Arrays  
+28. Find Intersection of Two Arrays  
+29. Find First Bad Version  
+30. Counting Sort  
+
+---
+
+## **Linked List Questions**
+31. Reverse a Linked List  
+32. Detect a Cycle in a Linked List  
+33. Merge Two Sorted Linked Lists  
+34. Remove Nth Node From End of List  
+35. Find Middle of a Linked List  
+36. Add Two Numbers (Linked List Representation)  
+37. Sort a Linked List  
+38. Intersection of Two Linked Lists  
+39. Rotate a Linked List  
+40. Clone a Linked List with Random Pointers  
+
+---
+
+## **Stack & Queue**
+41. Implement Stack using Queues  
+42. Implement Queue using Stacks  
+43. Valid Parentheses  
+44. Min Stack  
+45. Next Greater Element  
+46. Daily Temperatures  
+47. Sliding Window Maximum  
+48. LRU Cache Implementation  
+49. Evaluate Reverse Polish Notation  
+50. Largest Rectangle in Histogram  
+
+---
+
+## **Recursion & Backtracking**
+51. Generate Parentheses  
+52. Permutations  
+53. Subsets  
+54. Word Break Problem  
+55. N-Queens Problem  
+56. Sudoku Solver  
+57. Combination Sum  
+58. Letter Combinations of a Phone Number  
+59. Palindrome Partitioning  
+60. Restore IP Addresses  
+
+---
+
+## **Dynamic Programming (DP)**
+61. Climbing Stairs  
+62. House Robber  
+63. Coin Change  
+64. Longest Increasing Subsequence  
+65. Maximum Product Subarray  
+66. Unique Paths  
+67. Longest Palindromic Substring  
+68. Edit Distance  
+69. Interleaving String  
+70. Partition Equal Subset Sum  
+
+---
+
+## **Graph & Tree Questions**
+71. Binary Tree Inorder Traversal  
+72. Lowest Common Ancestor of a Binary Tree  
+73. Level Order Traversal of a Binary Tree  
+74. Validate Binary Search Tree  
+75. Diameter of Binary Tree  
+76. Serialize and Deserialize a Binary Tree  
+77. Graph Valid Tree  
+78. Number of Islands  
+79. Course Schedule (Topological Sorting)  
+80. Word Ladder  
+
+---
+
+## **Bit Manipulation**
+81. Single Number  
+82. Reverse Bits  
+83. Power of Two  
+84. Hamming Distance  
+85. Counting Bits  
+86. Sum of Two Integers Without Using `+` or `-`  
+87. XOR of All Numbers in an Array  
+88. Swap Two Numbers Without Temporary Variable  
+89. Number of 1 Bits  
+90. Missing Number in an Array  
+
+---
+
+## **Mathematical & Logical Puzzles**
+91. FizzBuzz  
+92. Find GCD of Two Numbers  
+93. Check if a Number is Prime  
+94. Reverse Integer  
+95. Integer to Roman  
+96. Roman to Integer  
+97. Factorial Trailing Zeroes  
+98. Ugly Number  
+99. Sqrt(x) Without Using Built-in Functions  
+100. Implement a Rate Limiter  
+
+---
+
+
