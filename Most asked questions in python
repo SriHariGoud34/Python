@@ -1,0 +1,34 @@
+1. Find Duplicate in an Array
+ans :-
+def find_duplicates(nums):
+    seen = set()
+    duplicates = set()
+
+    for num in nums:
+        if num in seen:
+            duplicates.add(num)
+        seen.add(num)
+    
+    return list(duplicates)
+
+# Example usage
+print(find_duplicates([1, 2, 3, 4, 2, 5, 3]))  # Output: [2, 3]
+
+✅ Time Complexity: O(n)
+✅ Space Complexity: O(n)
+
+2. Check if Two Strings Are Anagrams
+ans:-
+from collections import Counter
+
+def are_anagrams(s1, s2):
+    return Counter(s1) == Counter(s2)
+
+# Example usage
+print(are_anagrams("listen", "silent"))  # Output: True
+print(are_anagrams("hello", "world"))    # Output: False
+
+✅ Time Complexity: O(n)
+✅ Space Complexity: O(1) (since it's limited to 26 lowercase letters)
+
+3
